@@ -6,7 +6,7 @@
 export const APP_IDENTITY = {
   nameAr: 'وردك',
   nameEn: 'Wirdak',
-  androidPackage: 'com.noorapp.mobile',
+  androidPackage: 'com.wirdak.app',
   versionName: '1.0.0',
   /** ضع رقم التطبيق من App Store Connect بعد النشر */
   iosAppStoreId: '',

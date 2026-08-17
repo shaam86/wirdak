@@ -1,6 +1,6 @@
 # Google Play — دليل نشر وردك (Wirdak)
 
-استخدم هذا الملف أثناء تعبئة **Play Console**. الحزمة: `com.noorapp.mobile`.
+استخدم هذا الملف أثناء تعبئة **Play Console**. الحزمة: `com.wirdak.app`.
 
 ## قبل الرفع (إلزامي)
 
