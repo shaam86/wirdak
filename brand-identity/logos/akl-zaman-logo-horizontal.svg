@@ -1,29 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-label="#CD 2E'F  E7(. EF2DJ JH5D D('(C">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&amp;display=swap');
-      .brand { font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif; }
-    </style>
-  </defs>
-  <rect width="720" height="220" rx="24" fill="#FFFCFA"/>
-
-  <!-- Mark -->
-  <g transform="translate(36,28)">
-    <circle cx="82" cy="82" r="78" fill="#F3EEE6"/>
-    <circle cx="82" cy="82" r="72" fill="none" stroke="#D4A017" stroke-width="6"/>
-    <ellipse cx="82" cy="78" rx="34" ry="7" fill="#2C1810"/>
-    <path d="M50 78 C50 78 46 104 49 114 C53 126 68 132 82 132 C96 132 111 126 115 114 C118 104 114 78 114 78 Z" fill="#2C1810"/>
-    <ellipse cx="82" cy="78" rx="36" ry="8" fill="none" stroke="#D4A017" stroke-width="4"/>
-    <path d="M44 86 C34 86 34 100 44 100" fill="none" stroke="#2C1810" stroke-width="6" stroke-linecap="round"/>
-    <path d="M120 86 C130 86 130 100 120 100" fill="none" stroke="#2C1810" stroke-width="6" stroke-linecap="round"/>
-    <path d="M66 64 C62 52 72 46 68 34" fill="none" stroke="#D4A017" stroke-width="4" stroke-linecap="round"/>
-    <path d="M82 60 C78 48 88 42 84 30" fill="none" stroke="#D4A017" stroke-width="4" stroke-linecap="round"/>
-    <path d="M98 64 C94 52 104 46 100 34" fill="none" stroke="#D4A017" stroke-width="4" stroke-linecap="round"/>
-    <ellipse cx="110" cy="122" rx="10" ry="5" transform="rotate(-35 110 122)" fill="#5C6B4A"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Akl Zaman mark only">
+  <circle cx="100" cy="100" r="92" fill="#F3EEE6"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#D4A017" stroke-width="6"/>
+  <g transform="translate(100 105)">
+    <ellipse cx="0" cy="-8" rx="40" ry="8" fill="#2C1810"/>
+    <path d="M-38 -8 L-42 32 L-28 55 L0 60 L28 55 L42 32 L38 -8 Z" fill="#2C1810"/>
+    <ellipse cx="0" cy="-8" rx="43" ry="9" fill="none" stroke="#D4A017" stroke-width="4"/>
+    <path d="M-52 4 A12 12 0 0 0 -52 28" fill="none" stroke="#2C1810" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 4 A12 12 0 0 1 52 28" fill="none" stroke="#2C1810" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-16 -28 C-20 -48 -10 -55 -16 -72" fill="none" stroke="#D4A017" stroke-width="4" stroke-linecap="round"/>
+    <path d="M0 -32 C-4 -52 4 -60 0 -78" fill="none" stroke="#D4A017" stroke-width="4" stroke-linecap="round"/>
+    <path d="M16 -28 C12 -48 22 -55 16 -72" fill="none" stroke="#D4A017" stroke-width="4" stroke-linecap="round"/>
   </g>
-
-  <!-- Text (RTL visual: name on the right of mark in LTR file coords via positioning) -->
-  <text class="brand" x="680" y="95" text-anchor="end" font-size="58" font-weight="800" fill="#2C1810" direction="rtl">#CD 2E'F</text>
-  <text class="brand" x="680" y="138" text-anchor="end" font-size="24" font-weight="700" fill="#5C6B4A" direction="rtl">E7(. EF2DJ JH5D D('(C</text>
-  <text class="brand" x="680" y="172" text-anchor="end" font-size="20" font-weight="600" fill="#D4A017" direction="rtl">6 #C*H(1</text>
 </svg>
