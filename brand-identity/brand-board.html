@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>أكل زمان — الهوية البصرية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --espresso: #2C1810;
+      --turmeric: #D4A017;
+      --olive: #5C6B4A;
+      --linen: #F3EEE6;
+      --paprika: #B54A2E;
+      --white: #FFFCFA;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Cairo", sans-serif;
+      background:
+        radial-gradient(ellipse at 20% 0%, rgba(212, 160, 23, 0.18), transparent 50%),
+        radial-gradient(ellipse at 90% 20%, rgba(92, 107, 74, 0.12), transparent 45%),
+        linear-gradient(180deg, #EDE4D4 0%, var(--linen) 40%, #E8DFD0 100%);
+      color: var(--espresso);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    /* Hero — brand first */
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem 2.5rem;
+      position: relative;
+    }
+
+    .hero-mark {
+      width: min(280px, 70vw);
+      height: auto;
+      margin: 0 auto 1.25rem;
+      display: block;
+      filter: drop-shadow(0 12px 28px rgba(44, 24, 16, 0.12));
+      animation: rise 1s ease-out both;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      animation: rise 1s 0.1s ease-out both;
+    }
+
+    .hero .tag {
+      margin-top: 0.6rem;
+      font-size: 1.15rem;
+      color: #5a4034;
+      font-weight: 600;
+      animation: rise 1s 0.2s ease-out both;
+    }
+
+    .hero .loc {
+      margin-top: 0.35rem;
+      display: inline-block;
+      color: var(--olive);
+      font-weight: 700;
+      font-size: 0.95rem;
+      animation: rise 1s 0.3s ease-out both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      margin-top: 2.75rem;
+    }
+
+    section > h2 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+      border-bottom: 2px solid var(--turmeric);
+      display: inline-block;
+      padding-bottom: 0.15rem;
+    }
+
+    section > p.lead {
+      color: #5a4034;
+      margin: 0.5rem 0 1.25rem;
+      max-width: 36rem;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .swatch {
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 4px 18px rgba(44, 24, 16, 0.06);
+    }
+
+    .swatch .chip {
+      height: 88px;
+    }
+
+    .swatch .meta {
+      padding: 0.75rem 0.85rem 1rem;
+    }
+
+    .swatch strong { display: block; font-size: 0.95rem; }
+    .swatch code {
+      font-size: 0.8rem;
+      color: #7a5c4a;
+      font-family: ui-monospace, monospace;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .logo-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 1.25rem;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(44, 24, 16, 0.06);
+    }
+
+    .logo-card.dark {
+      background: var(--espresso);
+      color: var(--linen);
+    }
+
+    .logo-card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+    }
+
+    .logo-card h3 {
+      margin-top: 0.85rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .logo-card span {
+      display: block;
+      font-size: 0.8rem;
+      opacity: 0.75;
+      margin-top: 0.2rem;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    @media (min-width: 700px) {
+      .logo-grid .wide { grid-column: span 2; }
+    }
+
+    .voice {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .quote {
+      background: var(--white);
+      border-right: 4px solid var(--turmeric);
+      padding: 1rem 1.15rem;
+      border-radius: 0 12px 12px 0;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(44, 24, 16, 0.05);
+    }
+
+    .mock {
+      display: grid;
+      gap: 1.1rem;
+    }
+
+    @media (min-width: 800px) {
+      .mock { grid-template-columns: 1.1fr 0.9fr; }
+    }
+
+    .mock figure {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(44, 24, 16, 0.06);
+    }
+
+    .mock img {
+      width: 100%;
+      display: block;
+      vertical-align: middle;
+    }
+
+    .mock figcaption {
+      padding: 0.85rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #5a4034;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #7a5c4a;
+      font-size: 0.9rem;
+    }
+
+    footer strong { color: var(--espresso); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <img class="hero-mark" src="logos/akl-zaman-logo.svg" alt="شعار أكل زمان" />
+      <p class="tag">مطبخ منزلي يوصل لبابك</p>
+    </header>
+
+    <section>
+      <h2>الألوان</h2>
+      <p class="lead">دفء المطبخ المصري: إسبريسو، كركم، وزيتون — بدون ألوان صناعية.</p>
+      <div class="swatches">
+        <div class="swatch">
+          <div class="chip" style="background:#2C1810"></div>
+          <div class="meta"><strong>إسبريسو البيت</strong><code>#2C1810</code></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#D4A017"></div>
+          <div class="meta"><strong>كركم ذهبي</strong><code>#D4A017</code></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#5C6B4A"></div>
+          <div class="meta"><strong>زيتون مطبخي</strong><code>#5C6B4A</code></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#F3EEE6; border-bottom:1px solid #e5dccf"></div>
+          <div class="meta"><strong>كتان فاتح</strong><code>#F3EEE6</code></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#B54A2E"></div>
+          <div class="meta"><strong>بابريكا</strong><code>#B54A2E</code></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>الشعارات</h2>
+      <p class="lead">قدر نحاسي وبخار = أكل بيتي طازة. استخدم النسخة المناسبة لكل سطح.</p>
+      <div class="logo-grid">
+        <div class="logo-card">
+          <img src="logos/akl-zaman-logo.svg" alt="الشعار الأساسي SVG" />
+          <h3>الأساسي (SVG)</h3>
+          <span>منيو · يافطة · بروفايل</span>
+        </div>
+        <div class="logo-card">
+          <img src="logos/akl-zaman-logo-icon.svg" alt="أيقونة الشعار" />
+          <h3>الأيقونة</h3>
+          <span>واتساب · إنستجرام</span>
+        </div>
+        <div class="logo-card dark">
+          <img src="logos/akl-zaman-logo-dark.png" alt="الشعار الداكن" />
+          <h3>داكن</h3>
+          <span>ستوري · تغليف غامق</span>
+        </div>
+        <div class="logo-card wide">
+          <img src="logos/akl-zaman-logo-horizontal.svg" alt="الشعار الأفقي" />
+          <h3>أفقي (SVG)</h3>
+          <span>كيس التوصيل · هيدر · لافتات</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>نبرة الصوت</h2>
+      <p class="lead">عامية مصرية خفيفة… زي كلام البيت.</p>
+      <div class="voice">
+        <div class="quote">«أهلاً بيك في أكل زمان — قولنا هتحب إيه النهاردة؟»</div>
+        <div class="quote">«طلبك بيتجهز دلوقتي وهيوصلك سخن زي البيت.»</div>
+        <div class="quote">«من مطبخنا لبيتك في 6 أكتوبر.»</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>التطبيقات</h2>
+      <p class="lead">مزاج البراند على التغليف والصور.</p>
+      <div class="mock">
+        <figure>
+          <img src="mockups/akl-zaman-moodboard.png" alt="لوحة المزاج" />
+          <figcaption>لوحة المزاج — مطبخ بيتي دافي</figcaption>
+        </figure>
+        <figure>
+          <img src="mockups/akl-zaman-packaging-mockup.png" alt="موك أب التغليف" />
+          <figcaption>كيس التوصيل والعلبة</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <strong>أكل زمان · 6 أكتوبر</strong><br />
+      مطبخ منزلي يوصل لبابك
+    </footer>
+  </div>
+</body>
+</html>
