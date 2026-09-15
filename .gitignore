@@ -48,3 +48,4 @@ sindbad-social/
 promo-assets/audio/*.wav
 promo-assets/*TEMP*
 promo-assets/**/*TEMP*
+promo-assets/__pycache__/
