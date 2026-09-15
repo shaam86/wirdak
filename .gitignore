@@ -49,3 +49,8 @@ promo-assets/audio/*.wav
 promo-assets/*TEMP*
 promo-assets/**/*TEMP*
 promo-assets/__pycache__/
+promo-assets/work-ep1/
+promo-assets/audio-ep1/*.wav
+promo-assets/qa*.jpg
+promo-assets/qa*.png
+promo-assets/frames-ep1/raw-*.png
