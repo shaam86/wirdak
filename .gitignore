@@ -43,3 +43,21 @@ yarn-error.*
 # local / unrelated
 .claude/
 sindbad-social/
+
+# Safir promo build intermediates
+promo-assets/audio/*.wav
+promo-assets/*TEMP*
+promo-assets/**/*TEMP*
+promo-assets/__pycache__/
+promo-assets/work-ep1/
+promo-assets/audio-ep1/*.wav
+promo-assets/qa*.jpg
+promo-assets/qa*.png
+promo-assets/frames-ep1/raw-*.png
+promo-assets/work-brand/
+promo-assets/audio-brand/*.wav
+promo-assets/work-brand-yt/
+promo-assets/work-brand-pro/
+promo-assets/work-45/
+promo-assets/audio-45/*.wav
+promo-assets/frames-45/
